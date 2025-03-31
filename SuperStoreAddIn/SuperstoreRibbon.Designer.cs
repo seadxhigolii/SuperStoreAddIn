@@ -39,6 +39,10 @@
             this.btnHighlightHighSales = this.Factory.CreateRibbonButton();
             this.btnShowSummary = this.Factory.CreateRibbonButton();
             this.btnClearHighlights = this.Factory.CreateRibbonButton();
+            this.btnRegionSales = this.Factory.CreateRibbonButton();
+            this.btnLateShipping = this.Factory.CreateRibbonButton();
+            this.btnCategorySummary = this.Factory.CreateRibbonButton();
+            this.btnSalesBuckets = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             this.SuspendLayout();
@@ -55,6 +59,10 @@
             this.group1.Items.Add(this.btnHighlightHighSales);
             this.group1.Items.Add(this.btnShowSummary);
             this.group1.Items.Add(this.btnClearHighlights);
+            this.group1.Items.Add(this.btnRegionSales);
+            this.group1.Items.Add(this.btnLateShipping);
+            this.group1.Items.Add(this.btnCategorySummary);
+            this.group1.Items.Add(this.btnSalesBuckets);
             this.group1.Label = "group1";
             this.group1.Name = "group1";
             // 
@@ -75,6 +83,30 @@
             this.btnClearHighlights.Label = "Clear Highlights";
             this.btnClearHighlights.Name = "btnClearHighlights";
             this.btnClearHighlights.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnClearHighlights_Click);
+            // 
+            // btnRegionSales
+            // 
+            this.btnRegionSales.Label = "Region Sales";
+            this.btnRegionSales.Name = "btnRegionSales";
+            this.btnRegionSales.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnRegionSales_Click);
+            // 
+            // btnLateShipping
+            // 
+            this.btnLateShipping.Label = "Late Shipping";
+            this.btnLateShipping.Name = "btnLateShipping";
+            this.btnLateShipping.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnLateShipping_Click);
+            // 
+            // btnCategorySummary
+            // 
+            this.btnCategorySummary.Label = "Category Summary";
+            this.btnCategorySummary.Name = "btnCategorySummary";
+            this.btnCategorySummary.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnCategorySummary_Click);
+            // 
+            // btnSalesBuckets
+            // 
+            this.btnSalesBuckets.Label = "Sales Buckets";
+            this.btnSalesBuckets.Name = "btnSalesBuckets";
+            this.btnSalesBuckets.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnSalesBuckets_Click);
             // 
             // SuperstoreRibbon
             // 
@@ -97,6 +129,10 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnHighlightHighSales;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnShowSummary;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnClearHighlights;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton btnRegionSales;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton btnLateShipping;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton btnCategorySummary;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton btnSalesBuckets;
     }
 
     partial class ThisRibbonCollection
